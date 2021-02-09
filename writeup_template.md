@@ -46,8 +46,7 @@ You're reading it! and here is a link to my [project code](https://github.com/pa
 I used the pandas library to calculate summary statistics of the traffic
 signs data set:
 
-- The size of training set is 34799
-<!-- - The size of the validation set is ? -->
+- The size of training set is 34799 <!-- - The size of the validation set is ? -->
 - The size of test set is 12630
 - The shape of a traffic sign image is (32, 32, 3)
 - The number of unique classes/labels in the data set is 43
