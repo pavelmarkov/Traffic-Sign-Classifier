@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 - Summarize the results with a written report
 
 [//]: # "Image References"
-[image1]: ./images_for_report/bar.png "Visualization"
+[image1]: ./images_for_report/bar.png | width=100 "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
@@ -55,7 +55,7 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data distributed across traffic sign labels. Where label is an integer number from 0 to 42.
 
-![alt text][image1 | width=100]
+![alt text][image1]
 
 ### Design and Test a Model Architecture
 
