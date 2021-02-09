@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 - Summarize the results with a written report
 
 [//]: # "Image References"
-[image1]: ./examples/visualization.jpg "Visualization"
+[image1]: ./images_for_report/bar.png "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
@@ -51,9 +51,9 @@ signs data set:
 - The shape of a traffic sign image is (32, 32, 3)
 - The number of unique classes/labels in the data set is 43
 
-#### 2. Include an exploratory visualization of the dataset.
+#### 2. Exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here is an exploratory visualization of the data set. It is a bar chart showing how the data distributed across traffic sign labels. Where label is an integer number from 0 to 42.
 
 ![alt text][image1]
 
