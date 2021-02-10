@@ -70,12 +70,12 @@ My final model consisted of the following layers:
 
 To train the model, I used following hyperparameters:
 
-|  Hyperparameter   | Value |
-| :---------------: | :---: |
-| type of optimizer |   1   |
-|    batch size     |   1   |
-| number of epochs  |   1   |
-|   learning rate   |   1   |
+|  Hyperparameter   |     Value     |
+| :---------------: | :-----------: |
+| type of optimizer | AdamOptimizer |
+|    batch size     |      256      |
+| number of epochs  |      10       |
+|   learning rate   |     0.007     |
 
 #### 4. Finding a solution and getting the validation set accuracy to be at least 0.93.
 
