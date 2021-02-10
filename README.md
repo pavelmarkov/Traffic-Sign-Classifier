@@ -111,14 +111,14 @@ The code for making predictions on my final model is located in the 42nd cell of
 
 The model is absolutely sure about all images, except for image two (for which it make a mistake) and image three (for which is the predicted label is right). As shown below in the "Top 5 labels for each image" cell, the second predicted label for the second image was 'Speed limit (70km/h)', which is its true label. The top five soft max probabilities were:
 
-| Probability |              Prediction               |
-| :---------: | :-----------------------------------: |
-|    1.000    |               Road work               |
-|    0.998    |          Go straight or left          |
-|    0.993    |              Keep right               |
-|    1.000    |                 Yield                 |
-|    1.000    | Right-of-way at the next intersection |
-|    1.000    |             Priority road             |
+| Probability |              Prediction               | Is right |
+| :---------: | :-----------------------------------: | :------: |
+|    1.000    |               Road work               |   true   |
+|    0.998    |          Go straight or left          |  false   |
+|    0.993    |              Keep right               |   true   |
+|    1.000    |                 Yield                 |   true   |
+|    1.000    | Right-of-way at the next intersection |   true   |
+|    1.000    |             Priority road             |   true   |
 
 ```
 Top 5 Softmax Probabilities For Each Image:
