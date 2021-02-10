@@ -38,7 +38,7 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 I decided to generate additional data because training data is not evenly distributed through each label.
 
-To add more data to the data set, I just duplicated images which is underrepresented in data. So, the new image distribution became look like this:
+To add more data to the data set, I just duplicated images which are underrepresented in data. So, the new image distribution became look like this:
 
 <img src="./images_for_report/bar_new.png" width="500" />
 
