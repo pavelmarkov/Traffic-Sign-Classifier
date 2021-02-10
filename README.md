@@ -97,7 +97,7 @@ Here are six German traffic signs that I found on the web:
 
 The second image (70 km/h) might be difficult to classify because it's might be difficult for the model to distinguish it from "speed limit 20 km/h" and "30 km/h" traffic sign images.
 
-#### 2. Discuss the model's predictions on these new traffic signs.
+#### 2. Model's predictions on these new traffic signs.
 
 Here are the results of the prediction:
 
