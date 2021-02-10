@@ -20,7 +20,8 @@ Here is a link to my [project code](https://github.com/pavelmarkov/Traffic-Sign-
 I used the pandas library to calculate summary statistics of the traffic
 signs data set:
 
-- The size of training set is 34799 <!-- - The size of the validation set is ? -->
+- The size of training set is 34799
+- The size of the validation set is 4410
 - The size of test set is 12630
 - The shape of a traffic sign image is (32, 32, 3)
 - The number of unique classes/labels in the data set is 43
@@ -83,8 +84,8 @@ After tuning hyperparameters (batch size, number of epochs, earning rate) and pr
 
 <!-- - training set accuracy of ? -->
 
-- validation set accuracy of ?
-- test set accuracy of ?
+- validation set accuracy of 0.940
+- test set accuracy of 0.909
 
 ### Test a Model on New Images
 
@@ -102,28 +103,28 @@ Here are the results of the prediction:
 
 <img src="./images_for_report/prediction.png" width="650" />
 
-The model was able to correctly guess 6 of the 6 traffic signs, which gives an accuracy of 100%. Whereas on the test set the accuracy is about 90%, which is slightly worse.
+The model was able to correctly guess 5 of the 6 traffic signs, which gives an accuracy of 83.33%. Whereas on the test set the accuracy is about 90%, which is slightly better.
 
 #### 3. Softmax probabilities for each prediction. The top 5 softmax probabilities for each image.
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+The code for making predictions on my final model is located in the 42nd cell of the Ipython notebook.
 
-For the first image, the model is a little unsure that this is a Road work (probability of 0.998), leaving some space for Wild animals crossing sing. For the other 5 images the model is 100% sure. The top five soft max probabilities were:
+The model is absolutely sure about all images, except for image two (for which it make a mistake) and image three (for which is the predicted label is right). As shown below in the "Top 5 labels for each image" cell, the second predicted label for the second image was 'Speed limit (70km/h)', which is its true label. The top five soft max probabilities were:
 
 | Probability |              Prediction               |
 | :---------: | :-----------------------------------: |
-|    0.998    |               Road work               |
-|    1.000    |         Speed limit (70km/h)          |
-|    1.000    |              Keep right               |
+|    1.000    |               Road work               |
+|    0.998    |          Go straight or left          |
+|    0.993    |              Keep right               |
 |    1.000    |                 Yield                 |
 |    1.000    | Right-of-way at the next intersection |
 |    1.000    |             Priority road             |
 
 ```
 Top 5 Softmax Probabilities For Each Image:
-array([[0.998, 0.002, 0.000, 0.000, 0.000],
-       [1.000, 0.000, 0.000, 0.000, 0.000],
-       [1.000, 0.000, 0.000, 0.000, 0.000],
+array([[1.000, 0.000, 0.000, 0.000, 0.000],
+       [0.998, 0.002, 0.000, 0.000, 0.000],
+       [0.993, 0.005, 0.001, 0.001, 0.000],
        [1.000, 0.000, 0.000, 0.000, 0.000],
        [1.000, 0.000, 0.000, 0.000, 0.000],
        [1.000, 0.000, 0.000, 0.000, 0.000]], dtype=float32)
@@ -133,32 +134,32 @@ array([[0.998, 0.002, 0.000, 0.000, 0.000],
 Top 5 labels for each image:
 [   [   'Road work',
         'Wild animals crossing',
-        'Bicycles crossing',
-        'Bumpy road',
-        'General caution'],
-    [   'Speed limit (70km/h)',
-        'Speed limit (20km/h)',
+        'Turn right ahead',
+        'General caution',
+        'Bicycles crossing'],
+    [   'Go straight or left',
+        'Speed limit (70km/h)',
+        'Turn right ahead',
         'Speed limit (30km/h)',
-        'Go straight or left',
-        'General caution'],
+        'Speed limit (20km/h)'],
     [   'Keep right',
-        'Roundabout mandatory',
-        'Priority road',
+        'Speed limit (50km/h)',
+        'Speed limit (80km/h)',
         'Speed limit (30km/h)',
-        'Turn left ahead'],
+        'Speed limit (60km/h)'],
     [   'Yield',
         'Priority road',
-        'Speed limit (50km/h)',
+        'Right-of-way at the next intersection',
         'Speed limit (100km/h)',
-        'Keep right'],
+        'Double curve'],
     [   'Right-of-way at the next intersection',
-        'Dangerous curve to the left',
         'Double curve',
-        'Pedestrians',
-        'Beware of ice/snow'],
+        'Priority road',
+        'Beware of ice/snow',
+        'Pedestrians'],
     [   'Priority road',
-        'End of no passing by vehicles over 3.5 metric tons',
+        'No vehicles',
+        'Ahead only',
         'Roundabout mandatory',
-        'Speed limit (100km/h)',
-        'Keep right']]
+        'Speed limit (60km/h)']]
 ```
