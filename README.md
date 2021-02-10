@@ -90,7 +90,7 @@ After tuning hyperparameters (batch size, number of epochs, earning rate) and pr
 
 Here are six German traffic signs that I found on the web:
 
-<img src="./images_for_report/test_images.png" width="500" />
+<img src="./images_for_report/test_images.png" width="650" />
 
 The second image (70 km/h) might be difficult to classify because it's might be difficult for the model to distinguish it from "speed limit 20 km/h" and "30 km/h" traffic sign images.
 
@@ -98,7 +98,7 @@ The second image (70 km/h) might be difficult to classify because it's might be 
 
 Here are the results of the prediction:
 
-<img src="./images_for_report/prediction.png" width="500" />
+<img src="./images_for_report/prediction.png" width="650" />
 
 The model was able to correctly guess 6 of the 6 traffic signs, which gives an accuracy of 100%. Whereas on the test set the accuracy is about 90%, which is slightly worse.
 
